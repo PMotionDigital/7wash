@@ -114,10 +114,15 @@
     </div>
 </section>
 <section class="block-type section-bg_bezh section-color_green dis-flex flex-direction-col align-items-center">
-    <div class="col-lg-10">
+    <div class="col-lg-10 col-xs-11 col-lm-11">
         <div class="dis-grid grid-col-lg-2 grid-col-xs-1 grid-gap-2">
             <img src="<?php bloginfo( 'template_url' ) ?>/dist/uploads/image-5.jpg">
             <img src="<?php bloginfo( 'template_url' ) ?>/dist/uploads/image-5.jpg">
+        </div>
+    </div>
+    <div class="col-lg-10 col-xs-11 col-lm-11">
+        <div class="section-title type-1">
+            <h2>Story</h2>
         </div>
     </div>
 </section>
