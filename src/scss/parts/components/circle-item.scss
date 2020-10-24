@@ -1,0 +1,13 @@
+.circle-item {
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    justify-content: center;
+    &.type-1 {
+        width: 8rem;
+        height: 8rem;
+    }
+    &--pink {
+        background-color: $pink;
+    }
+}

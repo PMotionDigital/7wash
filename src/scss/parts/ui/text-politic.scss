@@ -1,0 +1,15 @@
+.text-block {
+    p {
+        line-height: 1.2;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    h1,h2,h3,h4,h5 {
+        font-weight: bold;
+        margin: 2.5rem 0 1.3rem 0;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

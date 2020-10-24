@@ -1,0 +1,116 @@
+.col-lg-1  { width: 8.33333333%; }
+.col-lg-2  { width: 16.66666667%; }
+.col-lg-3  { width: 25%; }
+.col-lg-4  { width: 33.33333333%; }
+.col-lg-5  { width: 41.66666667%; }
+.col-lg-6  { width: 50%; }
+.col-lg-7  { width: 58.33333333%; }
+.col-lg-8  { width: 66.66666667%; }
+.col-lg-9  { width: 75%; }
+.col-lg-10 { width: 83.33333333%; }
+.col-lg-11 { width: 91.66666667%; }
+.col-lg-12 { width: 100%; }
+
+.col-lg-vw-1  { width: 8.3vw; }
+.col-lg-vw-2  { width: 16.6vw; }
+.col-lg-vw-3  { width: 25vw; }
+.col-lg-vw-4  { width: 33.3vw; }
+.col-lg-vw-5  { width: 41.6vw; }
+.col-lg-vw-6  { width: 50vw; }
+.col-lg-vw-7  { width: 58.3vw; }
+.col-lg-vw-8  { width: 66.67vw; }
+.col-lg-vw-9  { width: 75vw; }
+.col-lg-vw-10 { width: 83.3vw; }
+.col-lg-vw-11 { width: 91.67vw; }
+.col-lg-vw-12 { width: 100vw; }
+
+.dis-flex {
+    display: flex;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-base {
+    align-items: baseline;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-between {
+    align-content:  space-between;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+// dis grid
+
+.dis-grid {
+    display: grid;
+}
+
+.grid-col-lg-1 {
+    grid-template-columns: repeat(1,1fr);
+}
+.grid-col-lg-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-col-lg-3 {
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-col-lg-4 {
+    grid-template-columns: repeat(4,1fr);
+}
+
+@for $i from 1 through 5 {
+    .grid-gap-#{$i} {
+        grid-gap: #{$i}rem;
+    }
+}
+
+@for $i from 1 through 10 {
+    .margin-t-#{$i} {
+        margin-top: #{$i}rem;
+    }
+}

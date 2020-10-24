@@ -1,0 +1,36 @@
+button{
+    outline: none;
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+.button {
+    display: inline-block;
+    color: $white;
+    font-size: inherit;
+    padding: 1rem 2.75rem;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1.75rem;
+    transition: all .25s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    &.type-1 {
+        background-color: $white;
+        color: $green;
+        &:hover {
+            background-color: rgba($white, .85);
+        }
+    }
+    &.type-2 {
+        background-color: $red;
+        color: $white;
+        &:hover {
+            background-color: rgba($red, .85);
+        }
+    }
+}

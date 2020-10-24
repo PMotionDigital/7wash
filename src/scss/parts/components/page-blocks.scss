@@ -1,0 +1,122 @@
+.section-color_green {
+    color: $green;
+}
+
+.section-bg {
+    &_white {
+        background-color: $white;
+    }
+    &_bezh {
+        background-color: $bezh;
+    }
+}
+
+.block-type {
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+    .section-title,
+    p,
+    a,
+    ul {
+        position: relative;
+        z-index: 1;
+    }
+    p {
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+        
+    }
+    .section-title {
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.block-type_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.block-type {
+    &--green {
+        color: $green;
+    }
+    &--white {
+        color: $white;
+    }
+    &--bezh {
+        background-color: $bezh;
+        color: $green;
+    }
+    &--blue {
+        background-color: $blue;
+        color: $white;
+    }
+    &.type-2 {
+        .section-title,
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+    &.type-3 {
+        color: $white;
+        background-color: $green;
+    }
+}
+
+.block-type__list {
+    h3 {
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    ul {
+        list-style: none;
+        li {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.block-type_images {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 4rem;
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+    .block-type_image_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        transform: translateY(-10rem);
+    }
+    // odd even
+    &:nth-of-type(odd) {
+        .block-type_images_image {
+            order: 2;
+            margin-top: -20rem;
+        }
+        .block-type_image_desc {
+            order: 1;
+            transform: translateY(0rem);
+        }
+    }
+}

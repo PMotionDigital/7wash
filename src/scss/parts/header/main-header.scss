@@ -1,0 +1,27 @@
+// Main header
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: $white;
+}
+
+// nav
+
+.main-nav_menu {
+    list-style: none;
+    li {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        a {
+            display: block;
+            padding: .5rem 0;
+            color: $green;
+            text-decoration: none;
+        }
+    }
+}

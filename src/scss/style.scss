@@ -1,0 +1,21 @@
+// libs
+@import './libs/grid.scss';
+
+// ui
+@import './parts/vars.scss';
+@import './parts/main.scss';
+@import './parts/ui/buttons.scss';
+@import './parts/ui/images.scss';
+@import './parts/ui/inputs.scss';
+@import './parts/ui/section-title.scss';
+@import './parts/ui/text-politic.scss';
+
+// header
+@import './parts/header/main-header.scss';
+
+// components
+@import './parts/components/page-blocks.scss';
+@import './parts/components/circle-item.scss';
+
+// pages
+@import './parts/pages/page-home.scss';

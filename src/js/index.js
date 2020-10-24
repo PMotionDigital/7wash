@@ -1,0 +1,2 @@
+// libs
+import $ from "jquery";
