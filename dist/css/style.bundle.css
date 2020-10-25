@@ -409,6 +409,25 @@ h1, h2, h3, h4 {
     order: 1;
     transform: translateY(0rem); }
 
+@media only screen and (max-width: 768px) {
+  .block-images .block-images_item {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem; }
+    .block-images .block-images_item:not(:last-child) {
+      margin-bottom: 0rem; }
+    .block-images .block-images_item .block-images_item_desc {
+      display: block;
+      text-align: left;
+      transform: translateY(0rem); }
+    .block-images .block-images_item:nth-of-type(even) .block-images_item_image {
+      order: inherit;
+      margin-top: 0rem; }
+    .block-images .block-images_item:nth-of-type(even) .block-images_item_desc {
+      order: inherit;
+      transform: translateY(0rem); }
+    .block-images .block-images_item:not(:last-child) {
+      margin-bottom: 4rem; } }
+
 .circle-item {
   display: flex;
   align-items: center;
@@ -433,6 +452,11 @@ h1, h2, h3, h4 {
   .circle-item--pink {
     background-color: #E5BEB8; }
 
+.socials-block {
+  display: flex; }
+  .socials-block a:not(:last-child) {
+    margin-right: 1rem; }
+
 .front-hello {
   min-height: calc(100vh - 4rem);
   position: relative; }
@@ -456,6 +480,42 @@ h1, h2, h3, h4 {
   .front-hello .front-hello_bg img {
     filter: brightness(0.95);
     object-fit: cover; }
+
+@media only screen and (max-width: 768px) {
+  .col-xs-1 {
+    width: 8.33333333%; }
+  .col-xs-2 {
+    width: 16.66666667%; }
+  .col-xs-3 {
+    width: 25%; }
+  .col-xs-4 {
+    width: 33.33333333%; }
+  .col-xs-5 {
+    width: 41.66666667%; }
+  .col-xs-6 {
+    width: 50%; }
+  .col-xs-7 {
+    width: 58.33333333%; }
+  .col-xs-8 {
+    width: 66.66666667%; }
+  .col-xs-9 {
+    width: 75%; }
+  .col-xs-10 {
+    width: 83.33333333%; }
+  .col-xs-11 {
+    width: 91.66666667%; }
+  .col-xs-12 {
+    width: 100%; }
+  .grid-col-xs-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-col-xs-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-col-xs-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-col-xs-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  html {
+    font-size: 16px; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

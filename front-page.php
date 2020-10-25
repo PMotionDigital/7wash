@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="front-hello dis-flex justify-content-center">
-    <div class="col-lg-10 dis-flex align-items-center">
+    <div class="col-lg-10 col-lm-11 col-xs-11 dis-flex align-items-center">
         <div class="front-hello_desc col-lg-5 col-xs-12 col-lm-12">
             <div class="section-title type-1">
                 <h1>
@@ -18,17 +18,17 @@
     </div>
 </section>
 <section class="block-type block-type--green dis-flex flex-direction-col align-items-center text-center">
-    <div class="section-title type-1 col-lg-5 col-xs-12 col-lm-12 margin-b-4">
+    <div class="section-title type-1 col-lg-5 col-xs-11 col-lm-11 margin-b-4">
         <h2>To extend the lifespan of our clothes, good fabric care is fundamental.</h2>
     </div>
-    <p class="col-lg-3 col-xs-12 col-lm-12 margin-b-4">Washing our clothes with less energy and water contributes to a more sustainable future. Our choice of detergent plays a significant role.</p>
+    <p class="col-lg-3 col-xs-11 col-lm-11 margin-b-4">Washing our clothes with less energy and water contributes to a more sustainable future. Our choice of detergent plays a significant role.</p>
     <a href="#" class="button type-2">Learn more</a>
 </section>
 <section class="block-type block-type--white dis-flex flex-direction-col align-items-center text-center">
     <div class="section-title type-1 col-lg-5 col-xs-12 col-lm-12 margin-b-4">
         <h2>7 wash has a unique formula, based on years of research in our lab in Denmark.</h2>
     </div>
-    <p class="col-lg-3 col-xs-12 col-lm-12">We've worked hard to make it sustainable - inside and out - so you can enjoy your everyday laundry routine with a better choice, both for your family and the planet.</p>
+    <p class="col-lg-3 col-xs-11 col-lm-11">We've worked hard to make it sustainable - inside and out - so you can enjoy your everyday laundry routine with a better choice, both for your family and the planet.</p>
     <div class="block-type_bg">
         <img src="<?php bloginfo( 'template_url' ) ?>/dist/uploads/image-2.jpg">
     </div>
@@ -37,7 +37,7 @@
     <div class="section-title type-1 col-lg-5 col-xs-11 col-lm-11 margin-b-4">
         <h2>The result?</h2>
     </div>
-    <p class="col-lg-3 col-xs-12 col-lm-12 margin-b-4">A detergent that uses just three ingredients to clean and freshen your clothes. And it softens too, even in hard water areas.</p>
+    <p class="col-lg-3 col-xs-11 col-lm-11 margin-b-4">A detergent that uses just three ingredients to clean and freshen your clothes. And it softens too, even in hard water areas.</p>
     <div class="block-type__list dis-flex justify-content-between col-lg-8 col-lm-11 col-xs-11">
         <div class="col-lg-4 col-xs-12 col-lm-12">
             <h3>pizda shtole</h3>
@@ -84,10 +84,10 @@
 </section>
 <section class="block-type block-type--blue type-2 dis-flex flex-direction-col align-items-center">
     <div class="col-lg-10 col-xs-11 col-lm-11 dis-flex flex-wrap-wrap align-items-center justify-content-between">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-lm-12 col-xs-12">
             <img src="<?php bloginfo( 'template_url' ) ?>/dist/uploads/image-3.jpg">
         </div>
-        <div class="col-lg-6 text-block">
+        <div class="col-lg-6 col-lm-12 col-xs-12 text-block">
             <div class="section-title type-1 margin-b-4">
                 <h2>Mission</h2>
             </div>
@@ -105,13 +105,13 @@
     </div>
 </section>
 <section class="block-type block-type--green section-color_green section-bg_white dis-flex flex-direction-col align-items-center text-center">
-    <div class="section-title type-1 col-lg-10 margin-b-4">
+    <div class="section-title type-1 col-lg-10 col-lm-11 col-xs-11 margin-b-4">
         <h2>But we’re not stopping!</h2>
     </div>
     <div class="circle-item circle-item--pink type-1 section-color_green">
         <p>Our<br>commitment<br>to you</p>
     </div>
-    <div class="col-lg-4 margin-t-4">
+    <div class="col-lg-4 col-lm-11 col-xs-11 margin-t-4">
         <p>We promise that we will constantly research new ways we can do even better for you, your clothes and the planet. We’ll continue doing whatever we can to create a healthier planet and a better future. Let’s do it together.</p>
     </div>
 </section>
