@@ -5,24 +5,28 @@
 }
 
 @font-face {
-    font-family: "MyriadPro";
+    font-family: 'GT Pressura';
+    src: url('../fonts/GT-Pressura-Regular.woff') format('woff'),
+        url('../fonts/GT-Pressura-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Candide";
+    font-style: italic;
+    font-weight: normal;
+    src: url('../fonts/Candide-Medium-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Candide";
     font-style: normal;
     font-weight: normal;
-    src: url(../fonts/MyriadPro-Regular.ttf);
-}
-
-@font-face {
-    font-family: "MyriadPro";
-    font-style: bold;
-    font-weight: normal;
-    src: url(../fonts/MyriadPro-Bold.ttf);
-}
-
-@font-face {
-    font-family: "MyriadPro";
-    font-style: 500;
-    font-weight: normal;
-    src: url(../fonts/MyriadPro-Semibold.ttf);
+    src: url('../fonts/Candide-Medium.woff') format('woff'),
+         url('../fonts/Candide-Medium.woff2') format('woff2');
 }
 
 html {
@@ -30,5 +34,5 @@ html {
 }
 
 body {
-    font-family: "MyriadPro", sans-serif;
+    font-family: 'GT Pressura', sans-serif;
 }

@@ -175,34 +175,65 @@
 .margin-t-10 {
   margin-top: 10rem; }
 
+.margin-b-1 {
+  margin-bottom: 1rem; }
+
+.margin-b-2 {
+  margin-bottom: 2rem; }
+
+.margin-b-3 {
+  margin-bottom: 3rem; }
+
+.margin-b-4 {
+  margin-bottom: 4rem; }
+
+.margin-b-5 {
+  margin-bottom: 5rem; }
+
+.margin-b-6 {
+  margin-bottom: 6rem; }
+
+.margin-b-7 {
+  margin-bottom: 7rem; }
+
+.margin-b-8 {
+  margin-bottom: 8rem; }
+
+.margin-b-9 {
+  margin-bottom: 9rem; }
+
+.margin-b-10 {
+  margin-bottom: 10rem; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 @font-face {
-  font-family: "MyriadPro";
+  font-family: 'GT Pressura';
+  src: url("../fonts/GT-Pressura-Regular.woff") format("woff"), url("../fonts/GT-Pressura-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Candide";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/Candide-Medium-Italic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Candide";
   font-style: normal;
   font-weight: normal;
-  src: url(../fonts/MyriadPro-Regular.ttf); }
-
-@font-face {
-  font-family: "MyriadPro";
-  font-style: bold;
-  font-weight: normal;
-  src: url(../fonts/MyriadPro-Bold.ttf); }
-
-@font-face {
-  font-family: "MyriadPro";
-  font-style: 500;
-  font-weight: normal;
-  src: url(../fonts/MyriadPro-Semibold.ttf); }
+  src: url("../fonts/Candide-Medium.woff") format("woff"), url("../fonts/Candide-Medium.woff2") format("woff2"); }
 
 html {
   font-size: 1.1vw; }
 
 body {
-  font-family: "MyriadPro", sans-serif; }
+  font-family: 'GT Pressura', sans-serif; }
 
 button {
   outline: none; }
@@ -266,6 +297,10 @@ input, textarea {
   .text-block h1:first-child, .text-block h2:first-child, .text-block h3:first-child, .text-block h4:first-child, .text-block h5:first-child {
     margin-top: 0; }
 
+h1, h2, h3, h4 {
+  font-family: "Candide";
+  font-weight: normal; }
+
 .main-header {
   position: fixed;
   top: 0;
@@ -287,11 +322,20 @@ input, textarea {
 .section-color_green {
   color: #1B7080; }
 
+.section-color_white {
+  color: #fff; }
+
 .section-bg_white {
   background-color: #fff; }
 
 .section-bg_bezh {
   background-color: #EEE7DD; }
+
+.section-bg_green {
+  background-color: #1B7080; }
+
+.section-bg_blue {
+  background-color: #3C85BE; }
 
 .block-type {
   padding: 8rem 0;
@@ -303,10 +347,6 @@ input, textarea {
   .block-type ul {
     position: relative;
     z-index: 1; }
-  .block-type p:not(:last-child) {
-    margin-bottom: 4rem; }
-  .block-type .section-title:not(:last-child) {
-    margin-bottom: 4rem; }
 
 .block-type_bg {
   position: absolute;
@@ -336,10 +376,6 @@ input, textarea {
   background-color: #3C85BE;
   color: #fff; }
 
-.block-type.type-2 .section-title,
-.block-type.type-2 p {
-  margin-bottom: 2rem; }
-
 .block-type.type-3 {
   color: #fff;
   background-color: #1B7080; }
@@ -354,22 +390,22 @@ input, textarea {
   .block-type__list ul li:not(:last-child) {
     margin-bottom: 1rem; }
 
-.block-type_images {
+.block-images .block-images_item {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-gap: 4rem; }
-  .block-type_images:not(:last-child) {
+  .block-images .block-images_item:not(:last-child) {
     margin-bottom: 4rem; }
-  .block-type_images .block-type_image_desc {
+  .block-images .block-images_item .block-images_item_desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     transform: translateY(-10rem); }
-  .block-type_images:nth-of-type(odd) .block-type_images_image {
+  .block-images .block-images_item:nth-of-type(even) .block-images_item_image {
     order: 2;
     margin-top: -20rem; }
-  .block-type_images:nth-of-type(odd) .block-type_image_desc {
+  .block-images .block-images_item:nth-of-type(even) .block-images_item_desc {
     order: 1;
     transform: translateY(0rem); }
 
@@ -377,10 +413,23 @@ input, textarea {
   display: flex;
   align-items: center;
   border-radius: 100%;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto; }
   .circle-item.type-1 {
     width: 8rem;
     height: 8rem; }
+  .circle-item.type-2 {
+    width: 11rem;
+    height: 11rem;
+    padding: 1rem; }
+    .circle-item.type-2 h3 {
+      font-size: 1.95rem;
+      margin-bottom: .5rem; }
+    .circle-item.type-2 p {
+      font-size: .75rem; }
   .circle-item--pink {
     background-color: #E5BEB8; }
 

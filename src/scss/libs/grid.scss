@@ -114,3 +114,9 @@
         margin-top: #{$i}rem;
     }
 }
+
+@for $i from 1 through 10 {
+    .margin-b-#{$i} {
+        margin-bottom: #{$i}rem;
+    }
+}

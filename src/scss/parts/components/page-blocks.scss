@@ -1,5 +1,10 @@
-.section-color_green {
-    color: $green;
+.section-color {
+    &_green {
+        color: $green;
+    }
+    &_white {
+        color: $white;
+    }
 }
 
 .section-bg {
@@ -8,6 +13,12 @@
     }
     &_bezh {
         background-color: $bezh;
+    }
+    &_green {
+        background-color: $green;
+    }
+    &_blue {
+        background-color: $blue;
     }
 }
 
@@ -21,17 +32,6 @@
     ul {
         position: relative;
         z-index: 1;
-    }
-    p {
-        &:not(:last-child) {
-            margin-bottom: 4rem;
-        }
-        
-    }
-    .section-title {
-        &:not(:last-child) {
-            margin-bottom: 4rem;
-        }
     }
 }
 
@@ -66,12 +66,6 @@
         background-color: $blue;
         color: $white;
     }
-    &.type-2 {
-        .section-title,
-        p {
-            margin-bottom: 2rem;
-        }
-    }
     &.type-3 {
         color: $white;
         background-color: $green;
@@ -94,29 +88,31 @@
     }
 }
 
-.block-type_images {
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-gap: 4rem;
-    &:not(:last-child) {
-        margin-bottom: 4rem;
-    }
-    .block-type_image_desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-        transform: translateY(-10rem);
-    }
-    // odd even
-    &:nth-of-type(odd) {
-        .block-type_images_image {
-            order: 2;
-            margin-top: -20rem;
+.block-images {
+    .block-images_item {
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-gap: 4rem;
+        &:not(:last-child) {
+            margin-bottom: 4rem;
         }
-        .block-type_image_desc {
-            order: 1;
-            transform: translateY(0rem);
+        .block-images_item_desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            transform: translateY(-10rem);
+        }
+        // odd even
+        &:nth-of-type(even) {
+            .block-images_item_image {
+                order: 2;
+                margin-top: -20rem;
+            }
+            .block-images_item_desc {
+                order: 1;
+                transform: translateY(0rem);
+            }
         }
     }
 }
