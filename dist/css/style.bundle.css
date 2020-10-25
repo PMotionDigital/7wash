@@ -310,7 +310,9 @@ h1, h2, h3, h4 {
   background-color: #fff; }
 
 .main-nav_menu {
-  list-style: none; }
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
   .main-nav_menu li:not(:last-child) {
     margin-right: 2rem; }
   .main-nav_menu li a {
@@ -470,6 +472,8 @@ h1, h2, h3, h4 {
     align-items: flex-start;
     justify-content: space-between;
     padding: 9rem 0 7rem 0; }
+    .front-hello .front-hello_desc .front-hello_desc_text {
+      margin: 4rem 0; }
   .front-hello .front-hello_bg,
   .front-hello .front-hello_bg img {
     position: absolute;
@@ -480,6 +484,63 @@ h1, h2, h3, h4 {
   .front-hello .front-hello_bg img {
     filter: brightness(0.95);
     object-fit: cover; }
+
+body.woocommerce a {
+  color: #000; }
+
+.woocommerce ul.products li.product .button {
+  display: inline-block;
+  color: #fff;
+  font-size: inherit;
+  padding: 1rem 2.75rem;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1.75rem;
+  transition: all .25s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color: #eaeaea;
+  color: #1B7080; }
+  .woocommerce ul.products li.product .button:hover {
+    background-color: rgba(255, 255, 255, 0.85); }
+
+@media only screen and (max-width: 1440px) {
+  .col-md-1 {
+    width: 8.33333333%; }
+  .col-md-2 {
+    width: 16.66666667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333333%; }
+  .col-md-5 {
+    width: 41.66666667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333333%; }
+  .col-md-8 {
+    width: 66.66666667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333333%; }
+  .col-md-11 {
+    width: 91.66666667%; }
+  .col-md-12 {
+    width: 100%; }
+  .grid-col-md-1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-col-md-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid-col-md-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-col-md-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  html {
+    font-size: 20px; } }
 
 @media only screen and (max-width: 768px) {
   .col-xs-1 {

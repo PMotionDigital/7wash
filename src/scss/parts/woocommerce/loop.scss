@@ -1,0 +1,25 @@
+.woocommerce {
+    ul.products {
+        li.product {
+            .button {
+                display: inline-block;
+                color: $white;
+                font-size: inherit;
+                padding: 1rem 2.75rem;
+                border: none;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 1.75rem;
+                transition: all .25s ease-in-out;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 2rem;
+                background-color: #eaeaea;
+                color: $green;
+                &:hover {
+                    background-color: rgba($white, .85);
+                }
+            }
+        }
+    }
+}   

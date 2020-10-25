@@ -21,5 +21,9 @@
 // pages
 @import './parts/pages/page-home.scss';
 
+// plugins rewrite
+@import './parts/woocommerce/global.scss';
+@import './parts/woocommerce/loop.scss';
+
 // responsive
 @import './responsive/responsive.scss';
