@@ -5,8 +5,11 @@ input, textarea {
     border: none;
     font-size: inherit;
     font-family: "MyriadPro";
+    background-color: $grey;
+    border-radius: 4px;
+    color: $black;
     &::placeholder {
-
+      color: $black;
     }
 }
 

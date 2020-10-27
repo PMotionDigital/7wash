@@ -118,6 +118,9 @@
 }
 
 @media only screen and(max-width: 768px) {
+    .block-type {
+        padding: 5rem 0;
+    }
     .block-images {
         .block-images_item {
             grid-template-columns: repeat(1,1fr);

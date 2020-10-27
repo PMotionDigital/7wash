@@ -1,0 +1,47 @@
+.summary {
+    padding-top: 5rem;
+    .product_title {
+        font-size: 3rem;
+        color: $green;
+    }
+    .posted_in {
+        display: none;
+    }
+    
+    .woocommerce-product-details__short-description {
+        p {
+            margin: 3rem 0;
+            font-size: 1.5rem;
+        }
+    }
+    .price {
+        display: none;
+    }
+}
+
+.woocommerce #respond input#submit, 
+.woocommerce a.button,
+.woocommerce button.button, 
+.woocommerce input.button {
+    @include buttonMix;
+}
+
+.woocommerce .summary .single_add_to_cart_button.button {
+    padding: 1.15rem 2rem !important;
+}
+
+.woocommerce .quantity .qty {
+    width: auto;
+    max-width: 6rem;
+    font-family: inherit;
+    padding: 1rem;
+}
+
+.related.products {
+    display: none;
+}
+
+.woocommerce div.product form.cart {
+    display: flex;
+    align-items: center;
+}

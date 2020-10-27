@@ -13,12 +13,12 @@
 <body <?php body_class(array($mobile)); ?>>
     <header class="main-header dis-flex justify-content-center">
         <div class="dis-flex justify-content-between align-items-center col-lg-10 col-xs-11 col-lm-11">
-            <div class="main-header_logo">
+            <div class="main-header_logo col-xs-2">
                 <a href="#">
                     <img src="<?php bloginfo( 'template_url' ) ?>/dist/img/logo.png">
                 </a>
             </div>
-            <div class="main-header_nav main-nav">
+            <div class="main-header_nav main-nav col-xs-10">
                 <?php wp_nav_menu([
                     'theme_location'  => 'top',
                     'container'       => 'ul',

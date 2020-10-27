@@ -8,6 +8,46 @@ $blue : #3C85BE;
 $pink : #E5BEB8;
 
 $black : #000;
+$grey : #f1f1f1;
 
 // ui
 
+@mixin buttonMix {
+    display: inline-block;
+    color: $white;
+    font-size: .85rem;
+    padding: .75rem 1.75rem;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1.75rem;
+    transition: all .25s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #eaeaea;
+    color: $green;
+    &:hover {
+        background-color: rgba($black, .05);
+    }
+}
+
+@mixin buttonMixImportant {
+    display: inline-block !important;
+    color: $white !important;
+    font-size: .85rem !important;
+    padding: .75rem 1.75rem !important;
+    border: none !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: 1.75rem !important;
+    transition: all .25s ease-in-out !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    border-radius: 2rem !important;
+    background-color: #eaeaea !important;
+    color: $green !important;
+    &:hover {
+        background-color: rgba($black, .05) !important;
+    }
+}

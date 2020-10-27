@@ -30,3 +30,16 @@
         object-fit: cover;
     }
 }
+
+@media only screen and(max-width: 768px) {
+    .front-hello {
+        min-height: auto;
+        .front-hello_desc {
+            justify-content: inherit;
+            padding: 7rem 0 5rem 0;
+            .front-hello_desc_text {
+                margin: 4rem 0;
+            }
+        }
+    }
+}

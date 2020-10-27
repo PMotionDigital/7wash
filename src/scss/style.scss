@@ -1,6 +1,9 @@
 // libs
 @import './libs/grid.scss';
 
+// plugins
+@import "~wow.js/css/libs/animate.css";
+
 // ui
 @import './parts/vars.scss';
 @import './parts/main.scss';
@@ -24,6 +27,7 @@
 // plugins rewrite
 @import './parts/woocommerce/global.scss';
 @import './parts/woocommerce/loop.scss';
+@import './parts/woocommerce/single-product.scss';
 
 // responsive
 @import './responsive/responsive.scss';

@@ -9,7 +9,35 @@ register_nav_menus(array(
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
    add_theme_support( 'woocommerce' );
-}        
+}     
+
+// woocommerce
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs' );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display' );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products' );
+
+add_filter( 'woocommerce_product_add_to_cart_text', 'custom_add_to_cart_price', 20, 2 ); // Shop and other archives pages
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'custom_add_to_cart_price', 20, 2 ); // Single product pages
+function custom_add_to_cart_price( $button_text, $product ) {
+    // Variable products
+    if( $product->is_type('variable') ) {
+        // shop and archives
+        if( ! is_product() ){
+            $product_price = wc_price( wc_get_price_to_display( $product, array( 'price' => $product->get_variation_price() ) ) );
+            return $button_text . ' - From ' . strip_tags( $product_price );
+        } 
+        // Single product pages
+        else {
+            return $button_text;
+        }
+    } 
+    // All other product types
+    else {
+        $product_price = wc_price( wc_get_price_to_display( $product ) );
+        return $button_text . ' - Just ' . strip_tags( $product_price );
+    }
+}
 
 // settings site
 
